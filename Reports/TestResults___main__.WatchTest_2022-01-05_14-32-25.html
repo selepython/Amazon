@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-01-05 14:32:25</p>
+                <p class='attribute'><strong>Duration: </strong>67.26 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.WatchTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_watchtest</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x01126903+2517251]
+	Ordinal0 [0x010BF8E1+2095329]
+	Ordinal0 [0x00FC2710+1058576]
+	Ordinal0 [0x00FEE324+1237796]
+	Ordinal0 [0x00FE4037+1196087]
+	Ordinal0 [0x010064D3+1336531]
+	Ordinal0 [0x00FE3A36+1194550]
+	Ordinal0 [0x010065BA+1336762]
+	Ordinal0 [0x01015BBF+1399743]
+	Ordinal0 [0x0100639B+1336219]
+	Ordinal0 [0x00FE27A7+1189799]
+	Ordinal0 [0x00FE3609+1193481]
+	GetHandleVerifier [0x012B5904+1577972]
+	GetHandleVerifier [0x01360B97+2279047]
+	GetHandleVerifier [0x011B6D09+534521]
+	GetHandleVerifier [0x011B5DB9+530601]
+	Ordinal0 [0x010C4FF9+2117625]
+	Ordinal0 [0x010C98A8+2136232]
+	Ordinal0 [0x010C99E2+2136546]
+	Ordinal0 [0x010D3541+2176321]
+	BaseThreadInitThunk [0x74E9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F17A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F17A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py", line 22, in test_watchtest
+    self.driver.find_element_by_id("p_89/Titan").click()  # Brand Titan
+  File "C:\Users\Muzamil Pasha\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 81, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Muzamil Pasha\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 710, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Muzamil Pasha\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Muzamil Pasha\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x01126903+2517251]
+	Ordinal0 [0x010BF8E1+2095329]
+	Ordinal0 [0x00FC2710+1058576]
+	Ordinal0 [0x00FEE324+1237796]
+	Ordinal0 [0x00FE4037+1196087]
+	Ordinal0 [0x010064D3+1336531]
+	Ordinal0 [0x00FE3A36+1194550]
+	Ordinal0 [0x010065BA+1336762]
+	Ordinal0 [0x01015BBF+1399743]
+	Ordinal0 [0x0100639B+1336219]
+	Ordinal0 [0x00FE27A7+1189799]
+	Ordinal0 [0x00FE3609+1193481]
+	GetHandleVerifier [0x012B5904+1577972]
+	GetHandleVerifier [0x01360B97+2279047]
+	GetHandleVerifier [0x011B6D09+534521]
+	GetHandleVerifier [0x011B5DB9+530601]
+	Ordinal0 [0x010C4FF9+2117625]
+	Ordinal0 [0x010C98A8+2136232]
+	Ordinal0 [0x010C99E2+2136546]
+	Ordinal0 [0x010D3541+2176321]
+	BaseThreadInitThunk [0x74E9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F17A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F17A6E+238]
+
+C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py:18: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_id("twotabsearchtextbox").send_keys("Wrist Watches")
+C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py:19: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_id("nav-search-submit-button").click()
+C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py:20: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_id("p_n_feature_seven_browse-bin/1480900031").click()  # Display Analogue
+C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py:21: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_id("p_n_material_browse/1480907031").click()  # Brand Material
+C:\Users\Muzamil Pasha\PycharmProjects\AmazonProject\TestCases\watchtest.py:22: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  self.driver.find_element_by_id("p_89/Titan").click()  # Brand Titan
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 67.26 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
